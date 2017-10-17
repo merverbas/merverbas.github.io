@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    background:hsla(359,22%,47%,1.00) ;
+}
+#container {
+    width: 960px;
+    position: relative;
+    margin: 10px auto;
+    border: 1px solid black;
+    background: white;
+}
+/* *** header *** */
+header {
+    width: 960px;
+    height: 120px;
+    position: relative;
+   
+}
+/* *** nav *** */
+/*nav {
+    width: 960px;
+    height: 38px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    
+}
+.nav-item {
+    width: 191px;
+    height: 38px;
+    position: relative;
+    float: left;
+    border: 1px solid pink;
+    border-left: 0;
+    background: royalblue;
+    color: white;
+    font-size: 16px;
+}*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:lightgray;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: royalblue;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: royalblue;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* *** content *** */
+#content {
+    width: 920px;
+    padding: 20px;
+    position: relative;
+    text-align: justify;
+    
+}
+#content h1 {
+    font-size: 18px;
+    text-align: center; 
+}
+/* *** footer *** */
+footer {
+    width: 960px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid black;
+    color: white;
+    background: royalblue;
+}
+/* logo */
+#logo {
+    width: 384px;
+    height: 120px;
+    position: center;
+    background: url(logo_738286.png)1000px 2000px no-repeat center center;
+}
+/* social media */
+#social-media {
+    width: 180px;
+    height: 48px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.social {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    
+}

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<script>
+        function isValid(frm)
+        {
+            var AdSoyad = frm.AdSoyad.value;
+            var telNo = frm.telNo.value;
+            var adres = frm.adres.value;
+            var tcNo = frm.tcNo.value;
+            var email = frm.email.value;
+            var atpos=email.indexOf("@");
+            var dotpos=email.lastIndexOf(".");
+        
+            if ( AdSoyad==null ||  AdSoyad=="" || AdSoyad.length < 4 )
+            {
+                alert("Ad ve Soyad 4 karakterden az olamaz");
+                return false;
+            }
+            if ( telNo== null ||telNo=="" || telNo.length == 10)
+            {
+                alert("telefon numaranızı 10 hane olarak giriniz ! ")
+                return false;
+            }
+            if ( adres==null || adres=="" ){
+                alert("adres boş bırakılamaz !")
+                return false;
+            }
+            if ( tcNo==null || tcNo=="" || tcNo.length == 11 ){
+                alert("tc numarası boş bırakılmaz ! ")
+                return false;
+            }
+            
+            if ( atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length )
+            {
+                alert("Geçerli email adresi girin");
+                return false;
+            }      
+            return true;
+        }
+</script>
+        
+    <style>
+      .kutucuk{
+          width: 300px;
+          height: 20px;
+          background-color: rgb(230, 184, 192);
+          border: 1px solid black;
+      }   
+      #kayıt{
+          width: 300px;
+          height: 20px;
+          background-color: rgb(230, 184, 192);
+          border: 1px solid black;
+          
+      }
+    </style>
+
+<html>
+
+<head>
+       
+</head>
+<body>
+<div id="uyelik_formu">
+    <form name="uye_formu" onsubmit="return isValid(this)" method="post">
+        <label>Ad-Soyad:</label>
+        <input class="kutucuk" type="text" name="Ad-Soyad">
+        <br>
+        <label>Telefon-no:</label>
+        <input class="kutucuk" type="telNo" name="Telefon-no">
+        <br>
+        <label>Tc-No:</label>
+        <input class="kutucuk" type="tcNo" name="Tc-no">
+        <br>
+        <label>Adres:</label>
+        <input class="kutucuk" type="adres" name="Adres">
+        <br>
+        <label>E-Mail:</label>
+        <input class="kutucuk" type="text" name="email">
+        <br>
+        <input id="kayıt" type="submit" value="Kaydet!">
+    </form>
+</div>
+</body>
+</html>
